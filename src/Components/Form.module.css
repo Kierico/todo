@@ -1,0 +1,44 @@
+form .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    margin-top: calc(0px - 26px);
+}
+
+form button {
+    color: var(--gray-100);
+    background-color: var(--blueDark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+form button:hover {
+    background-color: var(--blue);
+}
+
+form input {
+    font-size: 1rem;
+    color: var(--gray-300);
+    font-weight: 1.4;
+    width: 638px;
+    height: 54px;
+    padding-left: 8px;
+    background-color: var(--gray-500);
+    border: none;
+    border-radius: 8px;
+}
