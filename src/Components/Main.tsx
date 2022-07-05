@@ -1,5 +1,6 @@
 import { Notepad } from "phosphor-react";
 import styles from "./Main.module.css";
+import { Tasks } from "./Tasks";
 
 export function Main() {
     return (
@@ -15,11 +16,12 @@ export function Main() {
                 </div>
             </div>
             <article className={styles.content}>
-                <Notepad size={56} color="var(--gray-400)" />
+                {/* <Notepad size={56} color="var(--gray-400)" />
                 <div className={styles.text}>
                     <strong>Você ainda não tem tarefas cadastradas</strong>
                     <p>Crie tarefas e organize seus itens a fazer</p>
-                </div>
+                </div> */}
+                <Tasks />
             </article>
         </main>
     );
