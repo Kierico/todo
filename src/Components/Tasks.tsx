@@ -2,14 +2,19 @@ import { Trash } from "phosphor-react";
 
 import styles from "./Tasks.module.css";
 
-export function Tasks() {
+interface Tasks {
+    text: string;
+    isCompleted: boolean;
+}
+
+export function Tasks({ text, isCompleted }: Tasks) {
     return (
         <ul>
             <li className={styles.content}>
                 <div className={styles.wrapper}>
-                    <input type="radio" id="completed" />
+                    <input type="radio" checked={isCompleted} />
                     <p>
-                        Estudar mais ReactJS. Só vou ficar gigante no React se eu estudar muito!
+                        {text}
                     </p>
                 </div>
                 <button
